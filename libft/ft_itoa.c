@@ -1,24 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/13 21:17:33 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/14 14:13:30 by rsao-pay         ###   ########.fr       */
+/*   Created: 2025/10/14 14:28:30 by rsao-pay          #+#    #+#             */
+/*   Updated: 2025/10/14 14:28:31 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_calloc(size_t nmeb, size_t size)
-{
-	void	*p;
-
-	p = malloc(nmeb * size);
-	if (!p)
-		return (NULL);
-	ft_memset(p, 0, nmeb * size);
-	return (p);
-}
