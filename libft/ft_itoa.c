@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:10:42 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/16 16:07:16 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/20 14:25:13 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,34 @@ int	count_num(long n)
 	}
 	return (i);
 }
+int	nbchar(long nb, int count, int sign)
+{
+	char	*c;
+	int		i;
+	int		j;
+	char	temp;
+
+	i = 0;
+	j = 0;
+	if (sign < 0)
+	{
+		i = 1;
+		j = 1;
+	}
+	if (nb >= 10)
+	{
+		c[i] = nb % 10;
+		ft_putnbr(nb / 10);
+		i++;
+	}
+	while (i < count / 2)
+	{
+		temp = c[i];
+		c[i] = c[count - 1 - i];
+		c[count - 1 - i] = temp;
+		i++;
+	}
+}
 
 char	*ft_itoa(int n)
 {
@@ -36,17 +64,16 @@ char	*ft_itoa(int n)
 	int		count;
 	long	nb;
 	char	*dest;
+	int		sign;
 
 	nb = n;
 	if (nb < 0)
-	{
-		nb *= -1;
-		count = count_num(nb);
-		dest = (char *)malloc(sizeof(char) * (count + 1));
-	}
+		sign = -1;
 	else
-	{
-		count = count_num(nb);
-		dest = (char *)malloc(sizeof(char) * count);
-	}
+		sign = 1;
+	count = count_num(nb);
+	dest = (char *)malloc(sizeof(char) * count + 1);
+	dest = nbchar(nb, count - 1, sign);
+	dest[count] = '\0';
+	return (dest);
 }
