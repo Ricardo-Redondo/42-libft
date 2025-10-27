@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 12:57:52 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/24 12:59:31 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:48:37 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,8 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	}
 	return (lst);
+}
+
+int	main(void){
+	
 }

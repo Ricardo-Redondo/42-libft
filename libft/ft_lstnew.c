@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 11:45:38 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/24 11:52:54 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:48:47 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,8 @@ t_list	*ft_lstnew(void *content)
 	node->content = content;
 	node->next = NULL;
 	return (node);
+}
+
+int	main(void){
+	
 }

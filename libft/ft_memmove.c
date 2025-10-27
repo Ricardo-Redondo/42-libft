@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:37:12 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/13 22:44:22 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:49:04 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			*(--destp) = *(--srcp);
 	}
 	return (dest);
+}
+
+int	main(void){
+	
 }

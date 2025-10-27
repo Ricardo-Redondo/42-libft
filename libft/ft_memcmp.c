@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 21:39:56 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/13 21:43:45 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:48:57 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		p2++;
 	}
 	return (0);
+}
+
+int	main(void){
+	
 }

@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 20:13:48 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/13 21:39:28 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:59:06 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,10 @@ int	ft_atoi(const char *str)
 		str++;
 	}
 	return (count * r);
+}
+
+int	main(void){
+	const char *str = "IloveAtoi";
+	printf("%s\n", ft_atoi(str));
+	return(0);
 }

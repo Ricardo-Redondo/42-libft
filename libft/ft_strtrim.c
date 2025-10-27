@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:10:28 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/14 18:48:04 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:50:03 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_memcpy(trim, s1 + i, len_end + 1);
 	trim[len_end + 1] = '\0';
 	return (trim);
+}
+
+int	main(void){
+	
 }

@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:50:38 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/13 22:52:44 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:49:39 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[dest_length++] = src[i++];
 	dst[dest_length] = '\0';
 	return (sum);
+}
+
+int	main(void){
+	
 }

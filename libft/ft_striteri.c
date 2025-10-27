@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:25:20 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/22 15:31:05 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:49:33 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		f(i, s[i]);
 		i++;
 	}
+}
+
+int	main(void){
+	
 }

@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 23:44:45 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/13 23:48:23 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:50:00 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,8 @@ char	*ft_strrchr(const char *s, int c)
 	if (*(unsigned char *)s == (unsigned char)c)
 		return ((char *)s);
 	return (a);
+}
+
+int	main(void){
+	
 }

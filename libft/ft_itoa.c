@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:10:42 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/20 14:25:13 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:48:14 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,4 +76,8 @@ char	*ft_itoa(int n)
 	dest = nbchar(nb, count - 1, sign);
 	dest[count] = '\0';
 	return (dest);
+}
+
+int	main(void){
+	
 }

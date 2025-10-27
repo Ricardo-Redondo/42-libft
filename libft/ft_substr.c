@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 14:28:49 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/14 14:43:38 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:50:21 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_memcpy(substr, s + start, len);
 	substr[len] = '\0';
 	return (substr);
+}
+
+int	main(void){
+	
 }

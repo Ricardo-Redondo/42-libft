@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:48:36 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/13 21:39:35 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:47:32 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,8 @@ int	ft_isalnum(unsigned char c)
 		return (1);
 	else
 		return (0);
+}
+
+int	main(void){
+	
 }

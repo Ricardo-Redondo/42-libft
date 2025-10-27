@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 13:18:00 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/24 13:24:10 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:48:27 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		lst = next;
 	}
 	*lst = NULL;
+}
+
+int	main(void){
+	
 }

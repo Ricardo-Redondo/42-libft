@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 16:06:52 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/24 16:15:08 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:48:34 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,8 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		f(lst->content);
 		lst = lst->next;
 	}
+}
+
+int	main(void){
+	
 }

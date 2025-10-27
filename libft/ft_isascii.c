@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:53:21 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/13 21:39:41 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:48:07 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,8 @@ int	ft_isascii(unsigned char c)
 		return (1);
 	else
 		return (0);
+}
+
+int	main(void){
+	
 }

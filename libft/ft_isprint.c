@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:56:39 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/13 21:39:47 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:48:12 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,8 @@ int	ft_isprint(unsigned char c)
 		return (1);
 	else
 		return (0);
+}
+
+int	main(void){
+	
 }

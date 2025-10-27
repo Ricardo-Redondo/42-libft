@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 11:53:51 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/24 13:57:55 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:48:24 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,8 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		new->next = *lst;
 		*lst = new;
 	}
+}
+
+int	main(void){
+	
 }

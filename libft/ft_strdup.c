@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:49:11 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/13 22:50:33 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:49:30 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,8 @@ char	*ft_strdup(char *src)
 	}
 	dest[i] = '\0';
 	return (dest);
+}
+
+int	main(void){
+	
 }

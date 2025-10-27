@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 23:08:53 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/13 23:10:53 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:49:53 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		}
 	}
 	return(0);
+}
+
+int	main(void){
+	
 }

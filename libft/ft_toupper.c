@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 00:06:22 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/14 00:07:53 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/27 18:50:59 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,8 @@ int	ft_toupper(int c)
 		return (c - 32);
 	else
 		return (c);
+}
+
+int	main(void){
+	
 }
