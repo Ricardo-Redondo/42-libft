@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:06:48 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:47:37 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/28 15:40:27 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,7 @@ int	ft_isalpha(unsigned char c)
 }
 
 int	main(void){
-	
+	unsigned char c = "d";
+	printf("%i", ft_isalnum(c));
+	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 20:13:48 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:59:06 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/28 15:05:09 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,6 @@ int	ft_atoi(const char *str)
 
 int	main(void){
 	const char *str = "IloveAtoi";
-	printf("%s\n", ft_atoi(str));
+	printf("%i\n", ft_atoi(str));
 	return(0);
 }

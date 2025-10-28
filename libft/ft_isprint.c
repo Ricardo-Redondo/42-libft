@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:56:39 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:48:12 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/28 15:40:18 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,7 @@ int	ft_isprint(unsigned char c)
 }
 
 int	main(void){
-	
+	unsigned char c = "0";
+	printf("%i", ft_isalnum(c));
+	return (0);
 }

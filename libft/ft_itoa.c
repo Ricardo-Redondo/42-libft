@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:10:42 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:48:14 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/28 15:40:11 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,5 +79,10 @@ char	*ft_itoa(int n)
 }
 
 int	main(void){
-	
+	int n = -42;
+	int n2 = 42;	
+	printf("%s", ft_itoa(n));
+	printf("%s", ft_itoa(n2));
+	printf("%s", ft_itoa(0));
+	return (0);
 }

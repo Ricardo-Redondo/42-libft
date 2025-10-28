@@ -3,35 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:49:37 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:49:24 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/28 15:23:10 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_words(char const *s, char c)
+static int	ft_count_words(const char *s, char c)
 {
 	int	i;
 	int	words;
 
+	i = 0;
+	words = 0;
 	while (s[i])
 	{
-		if (s[i] == c)
+		if (s[i] != c)
 		{
 			words++;
-			i++;
-		}
+			while (s[i] && s[i] != c)
+				i++;
+		}	
 		else
 			i++;
 	}
-	words += 1;
 	return (words);
 }
 
-static char	*word_split(const char *s, char c)
+static char	*word_splitter(const char *s, char c)
 {
 	char	*word;
 	int		i;
@@ -55,30 +57,26 @@ static char	*word_split(const char *s, char c)
 char	**ft_split(char const *s, char c)
 {
 	int		i;
-	int		v;
+	int		j;
 	char	**words;
 
 	i = 0;
-	v = 0;
-	words = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
+	j = 0;
+	words = (char **) malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
 	if (!words || !s)
 		return (NULL);
 	while (s[i])
 	{
 		if (s[i] != c)
 		{
-			words[v] = word_split(&s[i], c);
-			while (s[i] != c && s[i])
+			words[j] = word_splitter(&s[i], c);
+			while (s[i] && s[i] != c)
 				i++;
-			v++;
+			j++;
 		}
 		else
 			i++;
 	}
-	words[v] = 0;
+	words[j] = 0;
 	return (words);
-}
-
-int	main(void){
-	
 }
