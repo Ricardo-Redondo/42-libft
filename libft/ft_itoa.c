@@ -6,13 +6,13 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:10:42 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/29 10:47:01 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/29 15:32:33 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_num(long n)
+static	int	count_num(long n)
 {
 	int	i;
 
@@ -29,53 +29,38 @@ int	count_num(long n)
 	}
 	return (i);
 }
-int	nbchar(long nb, int count, int sign)
+static	char	*nbchar(long nb, int count, char *str)
 {
-	char	*c;
-	int		i;
-	int		j;
-	char	temp;
-
-	i = 0;
-	j = 0;
-	if (sign < 0)
+	if (nb == 0)
 	{
-		i = 1;
-		j = 1;
+		str[0] = '0';
 	}
-	if (nb >= 10)
+	if (nb < 0)
 	{
-		c[i] = nb % 10;
-		ft_putnbr(nb / 10);
-		i++;
+		str[0] = '-';
+		nb *= -1;
 	}
-	while (i < count / 2)
+	while (nb > 0)
 	{
-		temp = c[i];
-		c[i] = c[count - 1 - i];
-		c[count - 1 - i] = temp;
-		i++;
+		str[count--] = nb % 10 + '0';
+		nb /= 10;
 	}
+	return(str);
 }
 
 char	*ft_itoa(int n)
 {
-	int		i;
 	int		count;
 	long	nb;
 	char	*dest;
-	int		sign;
 
 	nb = n;
-	if (nb < 0)
-		sign = -1;
-	else
-		sign = 1;
 	count = count_num(nb);
-	dest = (char *)malloc(sizeof(char) * count + 1);
-	dest = nbchar(nb, count - 1, sign);
-	dest[count] = '\0';
-	return (dest);
+	dest = (char *)malloc(sizeof(char) * (count + 1));
+	if (!dest)
+		return (NULL);
+	dest[count--] =	'\0';
+	return (nbchar(nb, count, dest));
 }
 
 int	main(void){

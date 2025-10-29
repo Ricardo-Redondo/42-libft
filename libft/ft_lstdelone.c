@@ -6,35 +6,9 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 13:10:30 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/29 10:46:43 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/29 14:42:34 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
-
-void	ft_lstdelone(t_list *lst, void (*del)(void*))
-{
-	if (!lst || !del)
-		return ;
-	del(lst->content);
-	free(lst);
-	lst = NULL;
-}
-
-static	void	del(void *content)
-{
-	free(content);
-}
-
-static	void	print_list(t_list *lst)
-{
-	while (lst)
-	{
-		printf("%s -> ", (char *)lst->content);
-		lst = lst->next;
-	}
-	printf("NULL\n");
-}
 
 #include "libft.h"
 
