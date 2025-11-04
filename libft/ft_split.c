@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:49:37 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 13:36:14 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 13:40:18 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static int	ft_count_words(const char *s, char c)
 	return (words);
 }
 
-static void	mem_free(char **words, j)
+static void	mem_free(char **words, int j)
 {
 	j--;
 	while (j >= 0)
