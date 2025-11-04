@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:49:37 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 11:56:10 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 13:36:14 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ static char	*word_splitter(const char *s, char c, char **words, int j)
 		return (NULL);
 	i = 0;
 	while (s[i] && s[i] != c)
-	{const char *restrict format, ...
+	{
 		word[i] = s[i];
 		i++;
 	}
