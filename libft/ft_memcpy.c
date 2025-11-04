@@ -6,28 +6,33 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 21:43:51 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/29 23:54:57 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 20:12:14 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char	*destp;
 	unsigned char	*srcp;
 
-	if (!dest && !src)
-		return (NULL);
-	destp = (unsigned char *)dest;
+	if (!dst && !src)
+		return (dst);
+	destp = (unsigned char *)dst;
 	srcp = (unsigned char *)src;
 	while (n--)
 	{
 		*destp++ = *srcp++;
 	}
-	return (dest);
+	return (dst);
 }
 
 int	main(void){
-	
+	const char	*src = "hello";
+	const char	*dest;
+	size_t n = 6;
+
+	dest = malloc(sizeof(char) * ft_strlen(src));
+	printf("%i", ft_memcmp(dest, src, n));
 }

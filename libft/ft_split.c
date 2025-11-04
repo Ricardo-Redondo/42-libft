@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:49:37 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 14:27:49 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 20:12:14 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,8 @@ char	**ft_split(char const *s, char c)
 		if (s[i] != c)
 		{
 			words[j] = word_splitter(&s[i], c, words, j);
+			if (!words[j])
+				return (NULL);
 			while (s[i] && s[i] != c)
 				i++;
 			j++;

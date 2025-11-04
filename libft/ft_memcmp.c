@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 21:39:56 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/29 23:56:02 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 20:12:14 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 }
 
 int	main(void){
-	
+	const char	*s1 = "hello";
+	const char	*s2 = "hello World";
+	size_t n = 6;
+
+	printf("%i", ft_memcmp(s1, s2, n));
 }

@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 21:26:53 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 11:04:08 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 20:12:14 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 }
 
 int	main(void){
-	
+	const char	*s = "hello";
+	int	c = 'e';
+	size_t n = 3;
+
+	printf("%s", ft_memchr(s, c, n));
 }
