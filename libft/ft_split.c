@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:49:37 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/28 15:23:10 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 11:56:10 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,18 @@ static int	ft_count_words(const char *s, char c)
 	return (words);
 }
 
-static char	*word_splitter(const char *s, char c)
+static void	mem_free(char **words, j)
+{
+	j--;
+	while (j >= 0)
+	{
+		free(words[j]);
+		j--;
+	}
+	free(words);
+}
+
+static char	*word_splitter(const char *s, char c, char **words, int j)
 {
 	char	*word;
 	int		i;
@@ -43,10 +54,11 @@ static char	*word_splitter(const char *s, char c)
 		i++;
 	word = (char *) malloc(sizeof(char) * (i + 1));
 	if (!word)
+		mem_free(words, j);
 		return (NULL);
 	i = 0;
 	while (s[i] && s[i] != c)
-	{
+	{const char *restrict format, ...
 		word[i] = s[i];
 		i++;
 	}
@@ -69,7 +81,7 @@ char	**ft_split(char const *s, char c)
 	{
 		if (s[i] != c)
 		{
-			words[j] = word_splitter(&s[i], c);
+			words[j] = word_splitter(&s[i], c, words, j);
 			while (s[i] && s[i] != c)
 				i++;
 			j++;
