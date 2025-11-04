@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:16:44 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:49:47 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/29 23:58:00 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	while (i < len)
 	{
-		dest = f(i, s[i]);
+		*dest = f(i, s[i]);
 		i++;
 	}
 	dest[len] = '\0';

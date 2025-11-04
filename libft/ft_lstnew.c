@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 11:45:38 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:48:47 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 11:00:00 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,8 @@ t_list	*ft_lstnew(void *content)
 }
 
 int	main(void){
-	
+	char *content = "Hello World";
+	t_list *node = ft_lstnew(content);
+
+	printf("%s", (char *)node->content);
 }

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:48:36 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/28 15:40:31 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/29 23:50:11 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(unsigned char c)
+int	ft_isalnum(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')
 		|| (c >= '0' && c <= '9'))
@@ -22,7 +22,7 @@ int	ft_isalnum(unsigned char c)
 }
 
 int	main(void){
-	unsigned char c = "d";
+	int c = 'd';
 	printf("%i", ft_isalnum(c));
 	return (0);
 }

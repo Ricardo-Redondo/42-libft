@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:53:21 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/28 15:40:24 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/10/29 23:49:22 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(unsigned char c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);
@@ -21,7 +21,7 @@ int	ft_isascii(unsigned char c)
 }
 
 int	main(void){
-	unsigned char c = "d";
+	int c = 'd';
 	printf("%i", ft_isalnum(c));
 	return (0);
 }

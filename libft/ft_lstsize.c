@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 12:02:45 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:48:51 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 11:03:40 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,12 @@ int	ft_lstsize(t_list *lst)
 }
 
 int	main(void){
-	
+	t_list *lst = NULL;
+	int count;
+
+    ft_lstadd_back(&lst, ft_lstnew(strdup("one")));
+    ft_lstadd_back(&lst, ft_lstnew(strdup("two")));
+    ft_lstadd_back(&lst, ft_lstnew(strdup("three")));
+	count = ft_lstsize(lst);
+	printf("the list has %i nodes", count);
 }
