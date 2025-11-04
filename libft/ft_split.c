@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:49:37 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 13:40:18 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 14:27:49 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	j = 0;
-	words = (char **) malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
+	words = (char **)malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
 	if (!words || !s)
 		return (NULL);
 	while (s[i])

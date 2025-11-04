@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 16:06:49 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/01 20:32:13 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 14:21:46 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ int main(void)
     mapped = ft_lstmap(lst, to_upper_dup, del);
     if (!mapped)
     {
-        fprintf(stderr, "ft_lstmap failed\n");
+        dprintf(2, "ft_lstmap failed\n");
         ft_lstclear(&lst, del);
         return (1);
     }
