@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 11:26:32 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 21:09:50 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 23:07:47 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,9 @@ void	ft_putchar_fd(char c, int fd)
 }
 
 int	main(void){
-	
+	char c = 'c';
+	int fd = 1;
+
+	ft_putchar_fd(c, fd);
+	return (0);
 }

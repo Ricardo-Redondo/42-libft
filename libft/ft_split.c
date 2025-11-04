@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:49:37 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 20:12:14 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 23:02:31 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,8 +54,10 @@ static char	*word_splitter(const char *s, char c, char **words, int j)
 		i++;
 	word = (char *) malloc(sizeof(char) * (i + 1));
 	if (!word)
+	{
 		mem_free(words, j);
 		return (NULL);
+	}
 	i = 0;
 	while (s[i] && s[i] != c)
 	{
@@ -93,4 +95,32 @@ char	**ft_split(char const *s, char c)
 	}
 	words[j] = 0;
 	return (words);
+}
+
+int	main(void){
+	const char *str = "I Belong to 42 Campus";
+    char c = ' ';
+    char **words;
+    int i;
+
+    words = ft_split(str, c);
+    if (!words)
+    {
+        dprintf(2, "ft_split returned NULL\n");
+        return (1);
+    }
+    i = 0;
+    while (words[i])
+    {
+        printf("word[%d] = \"%s\"\n", i, words[i]);
+        i++;
+    }
+    i = 0;
+    while (words[i])
+    {
+        free(words[i]);
+        i++;
+    }
+    free(words);
+    return (0);
 }

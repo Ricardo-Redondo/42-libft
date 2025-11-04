@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:37:12 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 21:09:11 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 21:21:27 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,13 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-int	main(void){
-		
+int	main(void)
+{
+	char *str = "123456789";
+	size_t n = 5;
+
+	printf("Before: %s\n", str);
+	ft_memmove(str + 2, str, n);
+	printf("After: %s\n", str);
+	return(0);
 }

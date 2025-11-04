@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 21:26:53 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 21:09:11 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 23:00:02 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,18 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-int	main(void){
+int main(void)
+{
 	const char	*s = "hello";
-	int	c = 'e';
-	size_t n = 3;
+	int			c = 'e';
+	size_t		n = 3;
+	void		*result = ft_memchr(s, c, n);
 
-	printf("%s", ft_memchr(s, c, n));
+	if (!result)
+		printf("Character '%c' not found in first %zu bytes\n", c, n);
+	else
+	{
+		printf("Found '%c' at position %ld\n", c, (char *)result - s);
+		printf("Substring from match: \"%s\"\n", (char *)result);
+	}
 }

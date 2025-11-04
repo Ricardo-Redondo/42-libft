@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:49:11 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:49:30 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 22:57:52 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,13 @@ char	*ft_strdup(char *src)
 }
 
 int	main(void){
+	char *src = "Hello 42";
+	char *dest = ft_strdup(src);
 	
+	if (!dest)
+		printf("Allocation Failed\n");
+	else
+		printf("the string got dupped to dest: %s", dest);
+	free(dest);
+	return (0);
 }
