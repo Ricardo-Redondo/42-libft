@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 16:06:49 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 14:21:46 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:17:46 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *nlst;
-	t_list *node;
+	t_list	*nlst;
+	t_list	*node;
 
 	if (!lst || !f)
 		return (NULL);
@@ -34,7 +34,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (nlst);
 }
-static void print_list(t_list *lst)
+/* static void print_list(t_list *lst)
 {
     while (lst)
     {
@@ -89,4 +89,4 @@ int main(void)
     ft_lstclear(&mapped, del);
     return (0);
 }
-
+ */

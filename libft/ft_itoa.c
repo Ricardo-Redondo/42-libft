@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:10:42 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/29 15:32:33 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:21:32 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ static	int	count_num(long n)
 	}
 	return (i);
 }
+
 static	char	*nbchar(long nb, int count, char *str)
 {
 	if (nb == 0)
@@ -45,7 +46,7 @@ static	char	*nbchar(long nb, int count, char *str)
 		str[count--] = nb % 10 + '0';
 		nb /= 10;
 	}
-	return(str);
+	return (str);
 }
 
 char	*ft_itoa(int n)
@@ -59,11 +60,11 @@ char	*ft_itoa(int n)
 	dest = (char *)malloc(sizeof(char) * (count + 1));
 	if (!dest)
 		return (NULL);
-	dest[count--] =	'\0';
+	dest[count--] = '\0';
 	return (nbchar(nb, count, dest));
 }
 
-int	main(void){
+/* int	main(void){
 	int n = -42;
 	int n2 = 42;	
 	printf("%s", ft_itoa(n));
@@ -71,3 +72,4 @@ int	main(void){
 	printf("%s", ft_itoa(0));
 	return (0);
 }
+ */

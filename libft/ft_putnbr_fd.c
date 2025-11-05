@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 11:38:17 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 21:24:15 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 23:25:21 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,11 @@ void	ft_putnbr_fd(int n, int fd)
 	ft_putchar_fd(c, fd);
 }
 
-int	main(void){
+/* int	main(void){
 	int n = -420;
 	int fd = 1;
 
 	ft_putnbr_fd(n, fd);
 	return (0);
 }
+ */

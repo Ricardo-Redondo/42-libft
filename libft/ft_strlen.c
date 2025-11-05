@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:59:18 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/29 10:40:50 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:34:49 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,9 @@ size_t	ft_strlen(const char *str)
 	return (i);
 }
 
-int	main(void){
-	
-}
+/* int	main(void){
+	const char *str = "Hello 42";
+
+	printf("str has %zu characters\n", ft_strlen(str));
+	return (0);
+} */

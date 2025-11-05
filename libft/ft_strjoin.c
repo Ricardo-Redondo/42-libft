@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 14:51:44 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 22:41:21 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:00:36 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	len_s1 = ft_strlen(s1);
 	len_s2 = ft_strlen(s2);
-	dest = (char *)malloc(sizeof(char *) * (len_s1 + len_s1 + 1));
+	dest = malloc(sizeof(char) * (len_s1 + len_s2 + 1));
 	if (!dest)
 		return (NULL);
-	ft_memcpy(dest, s1 ,len_s1);
+	ft_memcpy(dest, s1, len_s1);
 	ft_memcpy(dest + len_s1, s2, len_s2);
 	dest[len_s1 + len_s2] = '\0';
 	return (dest);
 }
 
-int	main(void){
+/* int	main(void){
 	char const *s1 = "Hello ";
 	char const *s2 = "World";
 	char *dest;
@@ -40,4 +40,4 @@ int	main(void){
 	printf("string combined: %s", dest);
 	free(dest);
 	return (0);
-}
+} */

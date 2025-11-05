@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:49:11 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 22:57:52 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 23:31:49 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strdup(char *src)
 	length = 0;
 	while (src[length] != '\0')
 		length++;
-	dest = (char *)malloc(sizeof(length + 1));
+	dest = (char *)malloc(sizeof(char) *(length + 1));
 	if (dest == NULL)
 		return (NULL);
 	i = 0;
@@ -34,7 +34,7 @@ char	*ft_strdup(char *src)
 	return (dest);
 }
 
-int	main(void){
+/* int	main(void){
 	char *src = "Hello 42";
 	char *dest = ft_strdup(src);
 	
@@ -45,3 +45,4 @@ int	main(void){
 	free(dest);
 	return (0);
 }
+ */

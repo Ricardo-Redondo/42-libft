@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:50:38 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 22:45:45 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:27:06 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (sum);
 }
 
-int	main(void){
-	
-}
+/* int	main(void){
+	char buffer[20] = "Hello";
+	const char *to_add = " World!";
+	size_t result;
+
+	result = ft_strlcat(buffer, to_add, sizeof(buffer));
+	printf("Resultado final: \"%s\"\n", buffer);
+	printf("Tamanho total pretendido: %zu\n", result);
+	return (0);
+} */

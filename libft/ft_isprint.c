@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:56:39 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/29 23:49:36 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 23:23:12 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,9 @@ int	ft_isprint(int c)
 		return (0);
 }
 
-int	main(void){
+/* int	main(void){
 	int c = 0;
 	printf("%i", ft_isalnum(c));
 	return (0);
 }
+ */

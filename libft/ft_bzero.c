@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 20:19:13 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:59:00 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 23:22:50 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-int	main(void){
+/* int	main(void){
 	char str[10] = "abcdefghi";
 	//print str before
     printf("Before: %s\n", str);
@@ -37,4 +37,4 @@ int	main(void){
         printf("%d ", str[i]);
     printf("\n");
     return (0);
-}
+} */

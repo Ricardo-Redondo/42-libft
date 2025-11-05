@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 12:57:52 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/01 19:49:17 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 23:29:10 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
+	if (!lst)
+		return (NULL);
 	while (lst->next != NULL)
-	{
 		lst = lst->next;
-	}
 	return (lst);
 }
-static	void	print_list(t_list *lst)
+/* static	void	print_list(t_list *lst)
 {
 	while (lst)
 	{
@@ -59,3 +59,4 @@ int	main(void){
     }
 	return (0);
 }
+ */

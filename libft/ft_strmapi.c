@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:16:44 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/29 23:58:00 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:36:34 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,47 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	i;
-	size_t	len;
-	char	*dest;
+	unsigned int	i;
+	size_t			len;
+	char			*dest;
 
-	i = 0;
+	if (!s || ! f)
+		return (NULL);
 	len = ft_strlen(s);
-	dest = (char *)malloc(sizeof(char) * (len + 1));
+	dest = malloc(sizeof(char) * (len + 1));
 	if (!dest)
 		return (NULL);
-	while (i < len)
+	i = 0;
+	while (i < (unsigned int)len)
 	{
-		*dest = f(i, s[i]);
+		dest[i] = f(i, s[i]);
 		i++;
 	}
 	dest[len] = '\0';
 	return (dest);
 }
 
-int	main(void){
-	
+/* static char	f(unsigned int i, char c)
+{
+	if (i % 2 == 0)
+		return (ft_toupper(c));
+	else
+		return (ft_tolower(c));
 }
+
+int	main(void)
+{
+	char	str[] = "HeLlO WoRlD";
+	char	*result;
+
+	result = ft_strmapi(str, f);
+	if (!result)
+		printf("Erro: memória insuficiente.\n");
+	else
+	{
+		printf("Original: %s\n", str);
+		printf("Mapped:   %s\n", result);
+		free(result);
+	}
+	return (0);
+} */

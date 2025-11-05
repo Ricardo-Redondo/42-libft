@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:10:28 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:50:03 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:44:08 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,20 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (trim);
 }
 
-int	main(void){
-	
-}
+/* int	main(void)
+{
+	const char	*s1 = "!!!Hello 42!!!";
+	const char	*set = "!";
+	char		*trimmed;
+
+	trimmed = ft_strtrim(s1, set);
+	if (!trimmed)
+		printf("Memory allocation failed.\n");
+	else
+	{
+		printf("Original: \"%s\"\n", s1);
+		printf("Trimmed : \"%s\"\n", trimmed);
+		free(trimmed);
+	}
+	return (0);
+} */

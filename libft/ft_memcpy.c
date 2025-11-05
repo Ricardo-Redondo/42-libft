@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 21:43:51 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 20:12:14 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 23:25:01 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-int	main(void){
+/* int	main(void){
 	const char	*src = "hello";
 	const char	*dest;
 	size_t n = 6;
@@ -36,3 +36,4 @@ int	main(void){
 	dest = malloc(sizeof(char) * ft_strlen(src));
 	printf("%i", ft_memcmp(dest, src, n));
 }
+ */

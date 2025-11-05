@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 00:06:20 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:50:57 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:46:23 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,14 @@ int	ft_tolower(int c)
 		return (c);
 }
 
-int	main(void){
-	
-}
+/* int	main(void)
+{
+	char	c1 = 'A';
+	char	c2 = 'z';
+	char	c3 = '4';
+
+	printf("Original: %c → Lowercase: %c\n", c1, ft_tolower(c1));
+	printf("Original: %c → Lowercase: %c\n", c2, ft_tolower(c2));
+	printf("Original: %c → Lowercase: %c\n", c3, ft_tolower(c3));
+	return (0);
+} */

@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 23:10:58 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:49:57 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:41:55 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,23 +17,37 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
-	i = 0;
-	if (little[0] == '\0')
+	if (!big || !little)
+		return (NULL);
+	if (*little == '\0')
 		return ((char *)big);
-	while (big[i] && i < len)
+	i = 0;
+	while (i < len && big[i])
 	{
-		j = 0;
-		while (big[i + j] != '\0' && big[i + j] == little[j] && i + j < len)
+		if (big[i] == little[0])
 		{
-			if (little[j + 1] == '\0')
+			j = 0;
+			while (i + j < len && little[j] && big[i + j] == little[j])
+				j++;
+			if (little[j] == '\0')
 				return ((char *)&big[i]);
-			++j;
 		}
-		++i;
+		i++;
 	}
 	return (NULL);
 }
 
-int	main(void){
-	
-}
+/* int	main(void)
+{
+	const char	*big = "Hello 42 Lisboa!";
+	const char	*little = "42";
+	size_t		len = 10;
+	char		*result;
+
+	result = ft_strnstr(big, little, len);
+	if (result)
+		printf("Found '%s' in '%s' → \"%s\"\n", little, big, result);
+	else
+		printf("'%s' not found in %zu chars of '%s'\n", little, len, big);
+	return (0);
+} */

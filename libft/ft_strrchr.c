@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 23:44:45 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:50:00 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:42:59 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,16 @@ char	*ft_strrchr(const char *s, int c)
 	return (a);
 }
 
-int	main(void){
-	
-}
+/* int	main(void)
+{
+	const char	*str = "Hello 42 Lisboa 42!";
+	int			ch = '4';
+	char		*result;
+
+	result = ft_strrchr(str, ch);
+	if (result)
+		printf("Last occurrence of '%c' in \"%s\" → \"%s\"\n", ch, str, result);
+	else
+		printf("Character '%c' not found in \"%s\"\n", ch, str);
+	return (0);
+} */

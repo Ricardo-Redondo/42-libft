@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 21:17:33 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/28 12:00:48 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 23:22:54 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_calloc(size_t nmeb, size_t size)
 	return (p);
 }
 
-int	main(void){
+/* int	main(void){
 	size_t nmeb = 5;
 	size_t size = 3;
 	int *arr;
@@ -34,4 +34,4 @@ int	main(void){
     	printf("%d ", arr[i]);
 	printf("\n");
 	return (0);
-}
+} */

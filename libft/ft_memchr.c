@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 21:26:53 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 23:00:02 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:15:33 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char *str;
+	const unsigned char	*str;
 
 	str = s;
 	while (n > 0)
@@ -27,7 +27,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-int main(void)
+/* int main(void)
 {
 	const char	*s = "hello";
 	int			c = 'e';
@@ -41,4 +41,4 @@ int main(void)
 		printf("Found '%c' at position %ld\n", c, (char *)result - s);
 		printf("Substring from match: \"%s\"\n", (char *)result);
 	}
-}
+} */

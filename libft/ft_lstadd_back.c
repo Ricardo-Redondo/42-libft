@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 13:01:24 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/29 10:46:58 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:20:20 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *pos;
+	t_list	*pos;
 
 	if (!lst || !new)
 		return ;
@@ -27,7 +27,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 }
 
-int	main(void){
+/* int	main(void){
 	//1st node = NULL to test function
 	t_list *lst = NULL;
 	//creating nodes
@@ -51,3 +51,4 @@ int	main(void){
 	free(n3);
 	return (0);
 }
+ */

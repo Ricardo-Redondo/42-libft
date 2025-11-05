@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:49:37 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 23:02:31 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:15:51 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	ft_count_words(const char *s, char c)
 			words++;
 			while (s[i] && s[i] != c)
 				i++;
-		}	
+		}
 		else
 			i++;
 	}
@@ -97,7 +97,7 @@ char	**ft_split(char const *s, char c)
 	return (words);
 }
 
-int	main(void){
+/* int	main(void){
 	const char *str = "I Belong to 42 Campus";
     char c = ' ';
     char **words;
@@ -124,3 +124,4 @@ int	main(void){
     free(words);
     return (0);
 }
+ */

@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 15:28:45 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/01 20:27:21 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/04 23:46:33 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	*ft_memset(void *s, int c, size_t n);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
-char	*strnstr(const char *big, const char *little, size_t len);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(char *src);

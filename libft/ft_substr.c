@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 14:28:49 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/10/27 18:50:21 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/05 00:45:35 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,19 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (substr);
 }
 
-int	main(void){
-	
-}
+/* int	main(void)
+{
+	const char	*str = "Hello 42 Lisboa!";
+	char		*sub;
+
+	sub = ft_substr(str, 6, 2);
+	if (!sub)
+		printf("Memory allocation failed.\n");
+	else
+	{
+		printf("Original: \"%s\"\n", str);
+		printf("Substring: \"%s\"\n", sub);
+		free(sub);
+	}
+	return (0);
+} */
