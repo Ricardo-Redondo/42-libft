@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:50:38 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/05 00:27:06 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:39:26 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t result;
 
 	result = ft_strlcat(buffer, to_add, sizeof(buffer));
-	printf("Resultado final: \"%s\"\n", buffer);
-	printf("Tamanho total pretendido: %zu\n", result);
+	printf("Final result: \"%s\"\n", buffer);
+	printf("Total filed space: %zu\n", result);
 	return (0);
 } */

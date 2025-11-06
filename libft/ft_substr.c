@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 14:28:49 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/05 00:45:35 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:46:59 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	sub = ft_substr(str, 6, 2);
 	if (!sub)
-		printf("Memory allocation failed.\n");
+		dprintf(2, "Memory allocation failed.\n");
 	else
 	{
 		printf("Original: \"%s\"\n", str);

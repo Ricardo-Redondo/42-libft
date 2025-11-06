@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 14:51:44 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/05 00:00:36 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:38:31 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char *dest;
 
 	dest = ft_strjoin(s1, s2);
-	printf("string combined: %s", dest);
+	printf("string combined: \"%s\"\n", dest);
 	free(dest);
 	return (0);
 } */

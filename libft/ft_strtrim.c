@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:10:28 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/05 00:44:08 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:46:49 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	trimmed = ft_strtrim(s1, set);
 	if (!trimmed)
-		printf("Memory allocation failed.\n");
+		dprintf(2, "Memory allocation failed.\n");
 	else
 	{
 		printf("Original: \"%s\"\n", s1);

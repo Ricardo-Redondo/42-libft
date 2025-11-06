@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 23:03:59 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/05 00:32:24 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:39:52 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	printf("Source: %s\n", src);
 	printf("Dest: %s\n", dest);
 	printf("Returned length: %zu\n", ret);
+	
 	// test with buffer smaller than src
 	char	small_dest[5];
 	ret = ft_strlcpy(small_dest, src, sizeof(small_dest));

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 20:19:13 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 23:22:50 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:01:44 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,10 @@ void	ft_bzero(void *s, size_t n)
 
 /* int	main(void){
 	char str[10] = "abcdefghi";
-	//print str before
     printf("Before: %s\n", str);
     ft_bzero(str, 5);
-	//print str after
     printf("After: ");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 9; i++)
         printf("%d ", str[i]);
     printf("\n");
     return (0);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 12:57:52 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 23:29:10 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:11:58 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,17 +34,16 @@ int	main(void){
 	t_list *lst = NULL;
 	t_list *last;
 	t_list *tmp;
-	// Create strings to set as nodes
+
 	char *s1 = strdup("one");
 	char *s2 = strdup("two");
 	char *s3 = strdup("three");
 
-	// Create nodes and add them
 	ft_lstadd_back(&lst, ft_lstnew(s1));
 	ft_lstadd_back(&lst, ft_lstnew(s2));
 	ft_lstadd_back(&lst, ft_lstnew(s3));
 
-	printf("Before applying funcion:\n");
+	printf("list:\n");
 	print_list(lst);
 
 	last = ft_lstlast(lst);

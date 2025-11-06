@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:49:11 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 23:31:49 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:36:40 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strdup(char *src)
 	char *dest = ft_strdup(src);
 	
 	if (!dest)
-		printf("Allocation Failed\n");
+		dprintf(2, "Allocation Failed\n");
 	else
 		printf("the string got dupped to dest: %s", dest);
 	free(dest);

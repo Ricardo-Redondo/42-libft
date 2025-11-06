@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 23:08:53 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/05 00:46:57 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:43:40 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 /* int main()
 {
-	char s1[] = "dfuygffa";
-	char s2[] = "dfuyg";
-	size_t n = 2;
-	printf("%d", ft_strncmp(s1, s2, n));	
+	char *s1 = "dfuygffa";
+	char *s2 = "dfuyg";
+	size_t n = 4;
+	printf("difference: %i\n", ft_strncmp(s1, s2, n));
+	return (0);
 }
  */

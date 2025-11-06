@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 21:26:53 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/05 00:15:33 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:17:33 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 /* int main(void)
 {
-	const char	*s = "hello";
+	const char	s[] = "hello";
 	int			c = 'e';
 	size_t		n = 3;
 	void		*result = ft_memchr(s, c, n);

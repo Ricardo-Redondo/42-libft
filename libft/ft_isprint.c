@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:56:39 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 23:23:12 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:06:17 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ int	ft_isprint(int c)
 		return (0);
 }
 
-/* int	main(void){
-	int c = 0;
-	printf("%i", ft_isalnum(c));
+/* int	main(void)
+{
+	int	c = 'a';
+	printf("Is is printable? %d\n", ft_isprint(c));
 	return (0);
-}
- */
+} */

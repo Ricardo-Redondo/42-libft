@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 13:18:00 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/05 00:17:39 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:09:54 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,12 +48,10 @@ int	main(void)
 {
 	t_list *lst = NULL;
 
-	// Create strings to set as nodes
 	char *s1 = strdup("one");
 	char *s2 = strdup("two");
 	char *s3 = strdup("three");
 
-	// Create nodes and add them
 	ft_lstadd_back(&lst, ft_lstnew(s1));
 	ft_lstadd_back(&lst, ft_lstnew(s2));
 	ft_lstadd_back(&lst, ft_lstnew(s3));
@@ -61,9 +59,7 @@ int	main(void)
 	printf("Before clear:\n");
 	print_list(lst);
 
-	// Clear the list
 	ft_lstclear(&lst, del);
-
 	printf("After clear:\n");
 	if (lst == NULL)
 		printf("List is NULL\n");

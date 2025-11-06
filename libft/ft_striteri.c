@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:25:20 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 23:25:58 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:38:00 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 int	main(void){
 	char *s = "Hello 42";
 
-	printf("before: %s", s);
+	printf("before: \"%s\"\n", s);
 	ft_striteri(s, f);
-	printf("after: %s", s);
+	printf("after: \"%s\"\n", s);
 	return (0);
 }
  */

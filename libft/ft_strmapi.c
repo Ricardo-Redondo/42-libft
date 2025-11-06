@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:16:44 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/05 00:36:34 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:41:49 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int	main(void)
 
 	result = ft_strmapi(str, f);
 	if (!result)
-		printf("Erro: memória insuficiente.\n");
+		dprintf(2, "Failed memory allocation.\n");
 	else
 	{
 		printf("Original: %s\n", str);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:53:21 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 23:23:05 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:05:38 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ int	ft_isascii(int c)
 		return (0);
 }
 
-/* int	main(void){
-	int c = 'd';
-	printf("%i", ft_isalnum(c));
+/* int	main(void)
+{
+	int	c = 'u';
+	printf("Is is ascii? %d\n", ft_isascii(c));
 	return (0);
-}
- */
+} */

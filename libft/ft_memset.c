@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 17:59:30 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/05 00:16:09 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:17:24 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ void	*ft_memset(void *s, int c, size_t n)
 
 /* int	main(void)
 {
-	char *str = "Hello, world!";
+	char str[] = "Hello, world!";
 	size_t n = 5;
 
-	printf("Antes: %s\n", str);
+	printf("Before: %s\n", str);
 	ft_memset(str + 7, '*', n);
-	printf("Depois: %s\n", str);
+	printf("After: %s\n", str);
 	return (0);
 } */
