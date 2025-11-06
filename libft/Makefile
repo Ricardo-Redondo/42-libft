@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+         #
+#    By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/29 23:41:34 by rsao-pay          #+#    #+#              #
-#    Updated: 2025/10/29 23:44:56 by rsao-pay         ###   ########.fr        #
+#    Updated: 2025/11/06 16:03:35 by rsao-pay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,11 +47,14 @@ all: ${NAME}
 
 bonus: ${OBJS} ${BONUS_OBJS}
 	@ar rcs ${NAME} ${OBJS} ${BONUS_OBJS}
+	@touch bonus
 	@echo "Bonus features unlocked!"
 
 clean:
 	@${RM} ${OBJS} ${BONUS_OBJS}
 	@echo "cleaning complete! (your workspace sparkles now)"
+	@touch bonus
+	@rm bonus
 
 fclean: clean
 	@${RM} ${NAME}
@@ -60,4 +63,4 @@ fclean: clean
 re: fclean all
 	@echo "full rebuild complete. fresh and clean!"
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re
