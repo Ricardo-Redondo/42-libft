@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:37:12 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/06 15:18:10 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/07 14:53:34 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	char		*destp;
 	const char	*srcp;
 
-	if (!dest && !src)
-		return (NULL);
 	destp = dest;
 	srcp = src;
 	if (destp < srcp)

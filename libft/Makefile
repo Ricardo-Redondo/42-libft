@@ -6,7 +6,7 @@
 #    By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/29 23:41:34 by rsao-pay          #+#    #+#              #
-#    Updated: 2025/11/07 11:28:51 by rsao-pay         ###   ########.fr        #
+#    Updated: 2025/11/07 14:50:28 by rsao-pay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,14 +47,14 @@ all: ${NAME}
 
 bonus: ${OBJS} ${BONUS_OBJS}
 	@ar rcs ${NAME} ${OBJS} ${BONUS_OBJS}
-	@touch bonus
+	@touch .bonus
 	@echo "Added Bonus part"
 
 clean:
 	@${RM} ${OBJS} ${BONUS_OBJS}
 	@echo "cleaning complete"
-	@touch bonus
-	@rm bonus
+	@touch .bonus
+	@rm .bonus
 
 fclean: clean
 	@${RM} ${NAME}

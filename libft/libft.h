@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 15:28:45 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/04 23:46:33 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/07 14:49:03 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <string.h>
 # include <stdio.h>
 # include <fcntl.h>
+# include <limits.h>
 
 typedef struct s_list
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 16:06:49 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/05 00:17:46 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/07 14:53:09 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*nlst;
 	t_list	*node;
+	void	*content;
 
 	if (!lst || !f)
 		return (NULL);
@@ -23,9 +24,11 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	node = NULL;
 	while (lst)
 	{
-		node = ft_lstnew(f(lst->content));
+		content = f(lst->content);
+		node = ft_lstnew(content);
 		if (!node)
 		{
+			del(content);
 			ft_lstclear(&nlst, del);
 			return (NULL);
 		}
