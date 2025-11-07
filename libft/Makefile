@@ -6,7 +6,7 @@
 #    By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/29 23:41:34 by rsao-pay          #+#    #+#              #
-#    Updated: 2025/11/06 16:03:35 by rsao-pay         ###   ########.fr        #
+#    Updated: 2025/11/07 11:28:51 by rsao-pay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,26 +41,26 @@ INCLUDE = -I .
 
 ${NAME}: ${OBJS}
 	@ar rcs ${NAME} ${OBJS}
-	@echo "libft has appeared!"
+	@echo "libft compiled"
 
 all: ${NAME}
 
 bonus: ${OBJS} ${BONUS_OBJS}
 	@ar rcs ${NAME} ${OBJS} ${BONUS_OBJS}
 	@touch bonus
-	@echo "Bonus features unlocked!"
+	@echo "Added Bonus part"
 
 clean:
 	@${RM} ${OBJS} ${BONUS_OBJS}
-	@echo "cleaning complete! (your workspace sparkles now)"
+	@echo "cleaning complete"
 	@touch bonus
 	@rm bonus
 
 fclean: clean
 	@${RM} ${NAME}
-	@echo "libft.a yeeted into the void."
+	@echo "fclean is done"
 
 re: fclean all
-	@echo "full rebuild complete. fresh and clean!"
+	@echo "full rebuild complete"
 
 .PHONY: all clean fclean re
