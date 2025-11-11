@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 21:17:33 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/07 14:49:14 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/11 15:28:41 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@ void	*ft_calloc(size_t nmeb, size_t size)
 {
 	void	*p;
 
-	if (!nmeb || !size)
-		return (NULL);
-	if (nmeb * size > INT_MAX)
+	if (!nmeb && !size && nmeb * size > INT_MAX)
 		return (NULL);
 	p = malloc(nmeb * size);
 	if (!p)

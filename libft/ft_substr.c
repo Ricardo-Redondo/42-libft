@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 14:28:49 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/06 15:46:59 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/11 15:32:24 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	substr_len = ft_strlen(s);
 	if (substr_len < start)
-	{
-		substr = (char *)malloc(sizeof(char *) * 1);
-		if (!substr)
-			return (NULL);
-		substr[0] = '\0';
-		return (substr);
-	}
+		return (ft_strdup(""));
 	if (len > substr_len - start)
 		len = substr_len - start;
-	substr = (char *)malloc(sizeof(char *) * (len + 1));
+	substr = (char *)malloc(sizeof(char) * (len + 1));
 	if (!substr)
 		return (NULL);
 	ft_memcpy(substr, s + start, len);

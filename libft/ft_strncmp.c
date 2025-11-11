@@ -6,7 +6,7 @@
 /*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 23:08:53 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/06 15:43:40 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/11 15:35:03 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,13 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (n == 0)
+	while (i < n)
 	{
-		return (0);
-	}
-	if (s1 && s2)
-	{
-		while (i < n)
+		if (s1[i] != s2[i] || s1[i] == '\0')
 		{
-			if (s1[i] != s2[i] || s1[i] == '\0')
-			{
-				return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-			}
-			i++;
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 		}
+		i++;
 	}
 	return (0);
 }
