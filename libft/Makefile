@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+         #
+#    By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/29 23:41:34 by rsao-pay          #+#    #+#              #
-#    Updated: 2025/11/11 13:14:57 by rsao-pay         ###   ########.fr        #
+#    Updated: 2025/11/13 15:43:28 by rsao-pay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ CFLAGS = -Wall -Wextra -Werror
 INCLUDE = -I .
 
 %.o: %.c
-	@${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
+	${CC} ${CFLAGS} ${INCLUDE} -c $< -o $@
 
 ${NAME}: ${OBJS}
 	@ar rcs ${NAME} ${OBJS}

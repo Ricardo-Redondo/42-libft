@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rsao-pay <rsao-pay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rsao-pay <rsao-pay@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:10:28 by rsao-pay          #+#    #+#             */
-/*   Updated: 2025/11/06 15:46:49 by rsao-pay         ###   ########.fr       */
+/*   Updated: 2025/11/13 15:40:17 by rsao-pay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	i;
 	size_t	j;
 
+	if (!s1 || !set)
+		return (NULL);
 	len_start = ft_strlen(s1);
 	i = 0;
 	while (s1[i] && is_set(s1[i], set))
